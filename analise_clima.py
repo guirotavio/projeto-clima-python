@@ -27,6 +27,7 @@ df = pd.DataFrame(dados_horarios)
 
 print("\nPrimeiras linhas do DataFrame:")
 print(df.head())
+
 df["time"] = pd.to_datetime(df["time"])
 df["data"] = df["time"].dt.date
 print("\nResumo estatístico:")
